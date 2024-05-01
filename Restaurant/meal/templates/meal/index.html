@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div
+  class=""
+  style="
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  "
+>
+  <div class="col-6">
+    <h1>Radission</h1>
+    <p>
+      Indulge in our culinary sanctuary, where each dish is a work of art and
+      every dining experience is a celebration of taste. Enter an atmosphere
+      radiating warmth and elegance, inviting you to embark on unforgettable
+      culinary journeys. Our chefs, fueled by a relentless pursuit of
+      excellence, carefully craft a menu that harmonizes local, seasonal
+      ingredients with inventive creativity. From the very first bite to the
+      lingering flavors, immerse yourself in the craftsmanship of our dishes,
+      meticulously designed to tantalize your senses and exceed your
+      expectations. Join us in crafting moments of culinary joy, where each
+      visit promises a discovery of remarkable flavors and unparalleled
+      hospitality.
+    </p>
+  </div>
+  <div>
+    <img
+      src="{% static 'images/home.jpg' %}"
+      alt="food"
+      style="height: 90vh"
+    />
+  </div>
+</div>
+{% endblock %}
