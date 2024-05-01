@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+</head>
+<body>
+    <h1>Welcome to our Shopping Page</h1>
+    <h3>Shopping Date: {{ shopping_date }}</h3>
+    <ul>
+        {% for item in shopping_items %}
+        <li>
+            Item: {{ item.name }} <br>
+            Categories: {{ item.categories|join:", " }} <br>
+            Price: ${{ item.price }} <br>
+            Quantity: {{ item.quantity }} <br>
+            Total Price: ${{ item.total_price }} <br>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
