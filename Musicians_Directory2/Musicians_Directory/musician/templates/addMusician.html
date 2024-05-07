@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center p-3">ADD MUSICIAN</h2>
+</div>
+
+<div class="container mt-5">
+    <form method="POST" enctype="multipart/form-data" class="m-auto w-50">
+        {% csrf_token %}
+        {% load crispy_forms_tags %}
+        {{ form|crispy }}
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+</div>
+{% endblock content %}
